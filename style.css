@@ -38,10 +38,6 @@ body {
     font-size: 1em;
 }
 
-.progress {
-    height: 4rem;
-}
-
 input {
     max-width: 500px;
     text-align: center !important;
@@ -97,3 +93,14 @@ input {
     font-weight: bold;
     color: black !important;
 }
+
+.progress {
+    height: 3rem;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px){
+    .progress {
+        height: 2rem;
+    }
+}
+
