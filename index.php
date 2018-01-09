@@ -1,3 +1,8 @@
+<?php
+$c = $_GET['c'];
+if($c == 1)
+echo 'alert("Thank You! I will get back to you asap!")';
+?>
 <!DOCTYPE html>
 <html id="home">
 
@@ -214,24 +219,26 @@
               <div class="container text-center">
                                 
                 <h1 class="white">Contact Me:</h1>
-                <form class="border rounded pt-3 pb-3 pl-3 pr-3 white" action="#home">
+                <form class="border rounded pt-3 pb-3 pl-3 pr-3 white" action="https://radiant-beach-22815.herokuapp.com/data" method="POST">
                   <div class="form-group">
                     <label for="Name">Name:</label>
-                    <input type="text" class="form-control" placeholder="YourName" required>
+                    <input type="text" name="name" class="form-control" placeholder="YourName" required>
                   </div>
                   <div class="form-group">
                     <label for="Email">Email address:</label>
-                    <input type="email" class="form-control" placeholder="YourName@gmail.com" required>
+                    <input type="email" name="email" class="form-control" placeholder="YourName@gmail.com" required>
                   </div>
                   <div class="form-group">
                     <label for="Textarea">Message:</label>
-                    <textarea class="form-control" id="textarea" rows="3" required></textarea>
+                    <textarea class="form-control" name="message" id="textarea" rows="3" required></textarea>
                   </div>
                   <button type="submit" class="btn btn-success btn-lg">Submit</button>
                 </form>
                 <div class="row white">
                     <div class="col-12 col-6-md"><h1>Email: frhnmdni@gmail.com</h1></div>
                     <div class="col-12 col-6-md"><h1>Contact Number: 7073803888</h1></div>
+                    <div class="col-6"><a href="https://github.com/webdevfarhan/"><i class="fa fa-github" aria-hidden="true"></i> Github</a></div>
+                    <div class="col-6"><a href="https://linkedin.com/in/farhan-madani-989538151/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></div>
                 </div>
               </div>
             </div>
@@ -278,6 +285,7 @@
             } // End if
     });
     </script>
+    <script src="https://use.fontawesome.com/fb72a67e96.js"></script>
 </body>
 
 </html>
