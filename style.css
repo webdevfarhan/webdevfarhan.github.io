@@ -1,18 +1,36 @@
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     font-size: 25px;
     font-family: 'Pompiere', cursive;
 }
 
-.blue {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(88, 88, 211);
+.parallax { 
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black {
+    /* width: 100%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.575); 
 }
 
 .red {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    background-color: #ef5350;
+    background-color: #ef5350; */
 }
 
 .container-fluid {
@@ -25,9 +43,9 @@ body {
 }
 
 #thumb {
-    width: 20%;
+    width: 30%;
     margin: 10px;
-    max-height: 300px;
+    max-height: 400px;
 }
 
 .white {
@@ -73,6 +91,10 @@ input {
     font-size: 2em;
 }
 
+img{
+    border-radius: 10px;
+}
+
 .CaptionDesc {
     color: black;
     font-weight: bold;
@@ -86,7 +108,8 @@ input {
 
 .carousel-caption {
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.95;
+    border-radius: 10px;
 }
 
 .nav-link {
@@ -98,7 +121,7 @@ input {
     height: 3rem;
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px){
+@media only screen and (max-width: 1300px) and (min-width: 768px){
     .progress {
         height: 2rem;
     }
